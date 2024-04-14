@@ -1,21 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './css/App.css';
 import AgeGroupPriceList from './components/AgeGroupPriceList/AgeGroupPriceList.js';
 
 function App() {
-    const handlePriceListChange = (result) => {
-        // 檢查每個元素是否都有 ageGroup 和 price，且 price 是數字
-        const isValidResult = result.every(item =>
-            item.ageGroup[0] !== '' &&
-            item.price !== '' &&
-            !isNaN(parseFloat(item.price))
-        );
+    // const handlePriceListChange = (result) => {
+    //     // 檢查每個元素是否都有 ageGroup 和 price，且 price 是數字
+    //     const isValidResult = result.every(item =>
+    //         item.ageGroup[0] !== '' &&
+    //         item.price !== '' &&
+    //         !isNaN(parseFloat(item.price))
+    //     );
 
-        // 如果所有結果都符合條件，則打印結果
-        if (isValidResult) {
-            console.log(result);
-        }
-    };
+    //     // 如果所有結果都符合條件，則打印結果
+    //     if (isValidResult) {
+    //         console.log(result);
+    //     }
+    // };
 
 
     return (

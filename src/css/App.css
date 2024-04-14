@@ -1,0 +1,116 @@
+:root {
+  --deep-grey: #999999;
+  --grey: #c2c2c2;
+  --light-grey: #eeeeee;
+  --black: #000000;
+  --purple: #74629e;
+  --pink-purple: #dbadfc;
+  --lavender: #c5cbfe;
+  --light-lavender: #eceeff;
+  --yellow: #ffd560;
+  --navy: #17234e;
+  --light-orange: #ffe9e4;
+  --orange: #eb6f50;
+  --green: #16c4ac;
+}
+
+.App {
+  /* width: 100%; */
+  box-sizing: border-box;
+}
+
+.test {
+  margin: 30px auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  /* justify-content: flex-start; */
+}
+
+.testRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0px;
+  border-bottom: 2px solid var(--grey);
+}
+
+.testBlock {
+  /* border: 1px solid red; */
+  width: 300px;
+  /* width: 100%; */
+  font-size: 14px;
+  color: var(--grey);
+  font-weight: 600;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.testBlock:nth-child(even) {
+  margin-right: 0px !important;
+}
+
+.settingsTitle {
+  color: var(--grey);
+  font-weight: 600;
+}
+
+.settingsBlock {
+  border: 1.5px solid var(--grey);
+  /* width: 100%; */
+  display: flex;
+  font-size: 14px;
+  border-radius: 5px;
+  overflow: hidden;
+  outline: var(--grey);
+  margin: 5px 0 0 0;
+}
+
+.settingsInput {
+  width: 100%;
+  border: 0px solid var(--light-grey);
+  border-radius: 0 5px 5px 0;
+  padding: 10px;
+}
+
+.error {
+  border: 2px solid var(--orange) !important;
+}
+
+input:focus {
+  outline-style: none;
+  border: 1px solid var(--grey);
+}
+
+.errorText {
+  color: var(--orange);
+  padding: 5px;
+  font-weight: 600;
+  background-color: var(--light-orange);
+  border-radius: 5px;
+}
+
+.settingsSelect {
+  width: 100%;
+  border: 1px solid var(--light-grey);
+  border-radius: 0 5px 5px 0;
+  padding: 10px;
+
+  /* border: 2px solid var(--orange); */
+}
+
+.settingsSelect:first-child {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.settingsSelect:last-child {
+  border-radius: 0px 5px 5px 0px;
+}
+
+select option {}
+
+select:focus {
+  outline-style: none;
+  border: 1px solid var(--grey);
+}

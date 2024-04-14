@@ -1,0 +1,22 @@
+.currencyValue {
+    width: 10%;
+    padding: 10px;
+    /* color: var(--grey); */
+    background-color: var(--light-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+input::placeholder {
+    color: var(--grey);
+}
+
+.hintText {
+    text-align: end;
+    /* margin-top: 3px; */
+}

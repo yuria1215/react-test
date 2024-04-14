@@ -1,9 +1,9 @@
-# REACT TEST
+# React Test
 
 ## 📖 專案說明
 
 ### DEMO
-https://yuria1215.github.io
+https://yuria1215.github.io/react-test
 
 ### function 位置
 [addComma 、 getNumberIntervals](./src/utils/index.js)

@@ -79,6 +79,7 @@
   /* height: 39px; */
   margin: 0;
   font-size: 14px;
+  color: var(--black);
 }
 
 .error {
@@ -107,6 +108,7 @@ input:focus {
   /* border: 2px solid var(--orange); */
   margin: 0;
   font-size: 14px;
+  color: var(--black);
 }
 
 .settingsSelect:first-child {

@@ -3,7 +3,7 @@
 ## 📖 專案說明
 
 ### DEMO
-https://yuria1215.github.io/react-test
+https://yuria1215.github.io/react-test/
 
 ### function 位置
 [addComma 、 getNumberIntervals](./src/utils/index.js)

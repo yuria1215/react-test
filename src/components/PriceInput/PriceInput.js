@@ -9,16 +9,20 @@ function PriceInput({ value, onChange }) {
     function handleInputChange(event) {
         const newValue = event.target.value;
         const newValueWithoutComma = newValue.replace(/,/g, ''); // 刪除所有逗號
-        const result = addComma(newValueWithoutComma);
 
         // 檢查是否為數字
-        const isNumeric = /^\d+$/.test(newValueWithoutComma.trim());
+        const isNumeric = /^-?\d*\.?\d+$/.test(newValueWithoutComma.trim());
+
         // 如果輸入是數字或者為空，清空錯誤訊息，否則顯示提示訊息
         setErrorMessage(isNumeric || newValueWithoutComma.trim() === '' ? '' : '只能輸入數字');
+
         // 如果輸入是空，顯示錯誤訊息
         if (newValue.trim() === '') {
             setErrorMessage('不可以為空白');
         }
+
+        // 調用千分位轉換函數
+        const result = addComma(newValueWithoutComma);
 
         onChange({ price: result });
     }

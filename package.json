@@ -16,7 +16,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://yuria1215.github.io/react-test",
+  "homepage": "https://yuria1215.github.io/react-test/",
   "eslintConfig": {
     "extends": [
       "react-app",
